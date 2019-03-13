@@ -42,7 +42,7 @@ declare namespace P {
     /**
      * Provides functions for serializing objects common to many projects.
      */
-    const stdSerializers: {
+    interface stdSerializers: {
         /**
          * Generates a JSONifiable object from the HTTP `request` object passed to the `createServer` callback of Node's HTTP server.
          */
