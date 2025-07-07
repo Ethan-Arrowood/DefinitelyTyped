@@ -685,6 +685,14 @@ declare module "module" {
              * @returns The absolute URL string that the specifier would resolve to.
              */
             resolve(specifier: string, parent?: string | URL): string;
+            /**
+             * Returns `true` when the current module is the entry point of the current process; `false` otherwise.
+             *
+             * Equivalent to `require.main === module` in CommonJS.
+             *
+             * Analogous to Python's __name__ == "__main__".
+             */
+            main: boolean;
         }
         namespace NodeJS {
             interface Module {
